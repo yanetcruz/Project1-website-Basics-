@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Monda:wght@400..700&display=swap');
 /* Root typography settings */
 html{
 /*   set the following properties: 
@@ -7,24 +8,88 @@ html{
   color- primary text color for the site
   background-color - primary background color for the site */
 
+  font-family: "Monda", sans-serif;
+  font-size: 400;
+  line-height: 1.6;
   
+}
+
+body{
+  color: #020000;
+  background:#BD8E8D; 
+  width: 80ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* General heading styles */
 h1, h2, h3, h4, h5, h6{
-  set font styles for all of your headings, for example font-weight, line-height, font-family
+  
 }
 
 /* Specific element text styles */
 h1{
-  /*   this is the page title */
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+
 }
 
 h2{
-  
+  font-weight: 900;
+
 }
 
 p{
-
   margin-bottom: 1rem; /* optional but usually good to have a space between paragraphs */
 }
+
+
+a{
+  color: #886191;
+}
+a:hover{
+  color: hotpink;
+  text-decoration: underline;
+}
+
+a:visited{
+  color: hotpink;
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* site title left, nav right */
+  align-items: center;           /* vertical centering */
+  padding: 1rem;
+}
+
+/* Styles the site title at the top of the header */
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;   /* remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;      /* horizontal layout for links */
+  gap: 1rem;          /* space between items */
+}
+
+nav a {
+  text-decoration: none;
+  color: 
+#333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: 
+#0066cc; /* hover color */
+}
+nav a:visited { 
+  color:#1a3c71
+}
+/* ------------- END Header styles  */
